@@ -2,7 +2,7 @@
 
 This is a [Django](http://www.djangoproject.com) project that you can use as the starting point to develop your own and deploy it on an [OpenShift](https://github.com/openshift/origin) cluster.
 
-**NOTE:** This version contains obsolete Django 1.11.x LTS which works with RHEL/Centos 7. Consider switching to RHEL/Centos 8 with Django 2.2.x LTS in [branch 2.2.x](https://github.com/sclorg/django-ex/tree/2.2.x).
+**NOTE:** This version contains obsolete Django 1.11.x LTS which works with RHEL/Centos 7. Consider switching to RHEL/Centos 8 with Django 2.2.x LTS in [branch 2.2.x](https://github.com/mbach04/django-ex/tree/2.2.x).
 
 The steps in this document assume that you have access to an OpenShift deployment that you can deploy applications on.
 
@@ -61,7 +61,7 @@ To run this project in your development machine, follow these steps:
 
 3. Fork this repo and clone your fork:
 
-    `git clone https://github.com/sclorg/django-ex.git`
+    `git clone https://github.com/mbach04/django-ex.git`
 
 4. Install dependencies:
 
@@ -122,7 +122,7 @@ Templates give you full control of each component of your application.
 Sometimes your application is simple enough and you don't want to bother with templates. In that case, you can let OpenShift inspect your source code and create the required components automatically for you:
 
 ```bash
-$ oc new-app centos/python-35-centos7~https://github.com/sclorg/django-ex
+$ oc new-app centos/python-35-centos7~https://github.com/mbach04/django-ex
 imageStreams/python-35-centos7
 imageStreams/django-ex
 buildConfigs/django-ex
